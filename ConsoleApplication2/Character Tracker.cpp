@@ -755,7 +755,7 @@ public:
 
 	void printMoney()
 	{
-		std::cout << firstName << " is currently carrying " << Platinum << "pp, " << Gold << "gp, " << Silver << "sp, and " << Bronze << "bp." << std::endl;
+		std::cout << firstName << " is currently carrying " << Platinum << "pp, " << Gold << "gp, " << Silver << "sp, and " << Bronze << "bp." << std::endl << std::endl;
 	}
 	void printStats()
 	{
@@ -800,17 +800,19 @@ public:
 			std::cout << Stats[i] << ": " << tempStat << " (" << std::showpos << strModifier << ")" << std::noshowpos;
 		}
 		std::cout << ", " << "Armor Class: " << armorClass << ". \n";
+		std::cout << std::endl;
 	}
 	
 	void printItems()
 	{
 		if (inventoryEmpty)
 		{
-			std::cout << "No items in inventory." << std::endl;
+			std::cout << "No items in inventory." << std::endl << std::endl;
 		}
 		else
 		{
 			int itemCounter = 1;
+			std::cout << std::endl;
 			std::cout << firstName << " is carrying the following items: " << std::endl;
 			for (string item : items)
 			{
@@ -824,6 +826,7 @@ public:
 				}
 				itemCounter++;
 			}
+			std::cout << std::endl;
 		}
 	}
 }; 
@@ -1037,7 +1040,7 @@ int main()
 		}
 		else if (command == "help")
 		{
-			std::cout << "The commands currently available are: \n" <<
+			std::cout << "The commands currently available are: \n \n" <<
 				"change stats ---- Change one or all of your character's core stats, including armor class." << std::endl <<
 				"view stats   ---- View one or all of your character's stats." << std::endl <<
 				"rename       ---- Rename your character." << std::endl <<
