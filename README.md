@@ -1,7 +1,7 @@
 # Character-Tracker
 A program for the tabletop game Dungeons &amp; Dragons used to track a character's stats and inventory
 
-To run, download "Character Tracker.exe" from the Console Program2 folder, and run.
+To run, download "Character Tracker.exe" from the ConsoleApplication2 folder, and run.
 
 Only runs in Windows
 
